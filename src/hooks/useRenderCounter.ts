@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { useRef } from 'react';
 
 export function useRenderCounter(componentName: string) {

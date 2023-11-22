@@ -4,7 +4,7 @@ import { useRenderCounter } from '../hooks/useRenderCounter';
 import { useGlobalStore } from '../store/globalStore';
 
 export function TodosCounter() {
-  useRenderCounter('TodosCounter');
+  useRenderCounter('Todos Counter');
 
   const todos = useGlobalStore((state) => state.todos);
   const totalTodos = todos.length;

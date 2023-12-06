@@ -2,9 +2,8 @@
 import {
   CheckCircleIcon,
   CircleIcon,
-  LeafIcon,
+  CloudOff,
   Trash2Icon,
-  WindIcon,
 } from 'lucide-react';
 
 import { useRenderCounter } from '../hooks/useRenderCounter';
@@ -29,10 +28,12 @@ export function TodosList() {
       {todos.length === 0 && (
         <div className="flex flex-col items-center justify-center gap-1.5 rounded-lg border border-dashed border-white/10 bg-white/5 p-10">
           <div className="flex items-end">
-            <WindIcon className="h-10 w-10" />
-            <LeafIcon className="h-5 w-5" />
+            <CloudOff className="h-10 w-10" />
+            {/* <LeafIcon className="h-5 w-5" /> */}
           </div>
-          <span className="opacity-70">Nenhuma tarefa criada!</span>
+          <span className="opacity-70">
+            Sem tarefas por aqui, apenas boas intenções!
+          </span>
         </div>
       )}
 
